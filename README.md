@@ -24,7 +24,7 @@ Siga os passos abaixo para configurar e executar o projeto localmente:
     npm install
     ```
 
-3. **Execute o aplicativo:**
+3. **Execute a aplicação:**
     ```bash
     npm run dev
     ```
