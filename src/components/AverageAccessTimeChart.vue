@@ -42,7 +42,7 @@
   
       const fetchData = async () => {
         try {
-          const response = await fetch('/api/data.json');
+          const response = await fetch('https://vuetestti.s3.us-east-1.amazonaws.com/data.json');
           if (!response.ok) {
             throw new Error('Network response was not ok');
           }
