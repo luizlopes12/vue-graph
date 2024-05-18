@@ -1,0 +1,20 @@
+:root {
+    --color-gray-100: #f6f6f6;
+    --color-gray-200: #cfcfcf;
+    --color-gray-300: #a2a2a2;
+    --color-gray-400: #535353;
+    --color-blue-100: #1a9bdc11;
+    --color-blue-200: #1a9cdc;
+    
+    --font-size-small: 0.9rem;
+    --font-size-medium: 1.2rem;
+    --font-size-large: 1.5rem;
+  
+    --font-weight-normal: 500;
+    --font-weight-bold: 600;
+  
+    --gap-small: 0.2rem;
+    --gap-medium: 0.5rem;
+    --gap-large: 1rem;
+  }
+  
