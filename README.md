@@ -16,7 +16,7 @@ Siga os passos abaixo para configurar e executar o projeto localmente:
 1. **Clone o repositório:**
     ```bash
     git clone https://github.com/luizlopes12/vue-graph.git
-    cd average-access-time-chart
+    cd vue-graph
     ```
 
 2. **Instale as dependências:**
