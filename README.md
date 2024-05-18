@@ -39,7 +39,7 @@ Os dados utilizados para criar o gráfico são obtidos a partir de um arquivo JS
 
 ## Estrutura do Projeto
 
-- `src/components/AverageAccessTimeChart.vue`: Componente principal do gráfico que utiliza Chart.js e vue-chartjs para renderizar o gráfico de linha.
+- `src/components/AverageAccessTimeChart.vue`: Componente principal do gráfico que utiliza Chart.js para renderizar o gráfico de linha.
 - `src/App.vue`: Componente de nível superior que incorpora o componente `AverageAccessTimeChart`.
 - `src/types.d.ts`: Definição de tipos TypeScript para o objeto JSON.
 - `src/main.ts`: Ponto de entrada principal do componente Vue.
