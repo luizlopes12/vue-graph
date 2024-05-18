@@ -1,9 +1,56 @@
-# Vue 3 + TypeScript + Vite
+# Average Access Time Chart
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Este projeto é um componente desenvolvido utilizando Vue 3, Vite e TypeScript, que exibe um gráfico de linha representando o tempo médio de acesso aos sites. O gráfico é gerado a partir de dados fornecidos em um arquivo JSON.
 
-## Recommended Setup
+## Tecnologias Utilizadas
 
-- [VS Code](https://code.visualstudio.com/) + [Vue - Official](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (previously Volar) and disable Vetur
+- **Vue 3**
+- **Vite**
+- **TypeScript**
+- **Chart.js**
 
-- Use [vue-tsc](https://github.com/vuejs/language-tools/tree/master/packages/tsc) for performing the same type checking from the command line, or for generating d.ts files for SFCs.
+## Instalação
+
+Siga os passos abaixo para configurar e executar o projeto localmente:
+
+1. **Clone o repositório:**
+    ```bash
+    git clone https://github.com/luizlopes12/vue-graph.git
+    cd average-access-time-chart
+    ```
+
+2. **Instale as dependências:**
+    ```bash
+    npm install
+    ```
+
+3. **Execute o aplicativo:**
+    ```bash
+    npm run dev
+    ```
+
+4. **Acesse a aplicação:**
+    Abra seu navegador e vá para `http://localhost:5173/`.
+
+## Dados
+
+Os dados utilizados para criar o gráfico são obtidos a partir de um arquivo JSON hospedado em um servidor remoto. O link para os dados é:
+[https://vuetestti.s3.us-east-1.amazonaws.com/data.json](https://vuetestti.s3.us-east-1.amazonaws.com/data.json).
+
+## Estrutura do Projeto
+
+- `src/components/AverageAccessTimeChart.vue`: Componente principal do gráfico que utiliza Chart.js e vue-chartjs para renderizar o gráfico de linha.
+- `src/App.vue`: Componente de nível superior que incorpora o componente `AverageAccessTimeChart`.
+- `src/types.d.ts`: Definição de tipos TypeScript para o objeto JSON.
+- `src/main.ts`: Ponto de entrada principal do componente Vue.
+
+## Como Funciona
+
+1. **Fetch dos Dados:**
+    O aplicativo faz uma requisição HTTP para o endpoint do JSON para obter os dados, foi necessário a criação de um proxy para contornar o erro de CORS.
+
+2. **Processamento dos Dados:**
+    Os dados são processados para calcular o tempo médio de acesso por dia.
+
+3. **Renderização do Gráfico:**
+    O gráfico de linha é renderizado utilizando `Chart.js`, exibindo o tempo médio de acesso ao longo do tempo.
